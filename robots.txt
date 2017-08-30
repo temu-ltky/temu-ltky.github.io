@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://temu-ltky.github.io/sitemap.xml
