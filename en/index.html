@@ -92,31 +92,78 @@ one of us</p>
             
               <article id="board">
   <h1>Board</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+  <p>Temu&rsquo;s board 2017</p>
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Nimi</th>
+                <th>Tehtävä</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atte Putkonen</td>
+                <td>Chairman</td>
+            </tr>
+            <tr>
+                <td>Joonas Suikula</td>
+                <td>Vice chairman</td>
+            </tr>
+            <tr>
+                <td>Mikko Hämäläinen</td>
+                <td>Equipment manager</td>
+            </tr>
+            <tr>
+                <td>Santeri Vanhala</td>
+                <td>Treasurer</td>
+            </tr>
+            <tr>
+                <td>Tatu Huttunen</td>
+                <td>Webmaster & electronic music sensei</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 </article>
 
             
               <article id="contact">
   <h1>Contact</h1>
-  <form method="post" action="#">
+  <p><form id="contactform" method="post" action="https://formspree.io/tatuhut@gmail.com">
     <div class="field half first">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" placeholder="Name"/>
     </div>
     <div class="field half">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
+        <input type="email" id="email" name="email" placeholder="Email">
     </div>
     <div class="field">
-        <label for="message">Nachricht</label>
-        <textarea name="message" id="message" rows="4"></textarea>
+        <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
     </div>
     <ul class="actions">
-        <li><input type="submit" value="Absenden" class="special" /></li>
-        <li><input type="reset" value="Zurücksetzen" /></li>
+        <li><input type="submit" value="Send message" class="special" /></li>
+        <li><input type="reset" value="Reset" /></li>
     </ul>
+    <input type="hidden" name="_next" value="?sent#contact" />
+    <input type="hidden" name="_subject" value="Yhteydenotto" />
+    <input type="text" name="_gotcha" style="display:none" />
 </form>
+<span id="contactformsent">Thank you for your message</span></p>
+
+<script>
+$(document).ready(function($) { 
+    $(function(){
+        if (window.location.search == "?sent") {
+            $('#contactform').hide();
+            $('#contactformsent').show();
+        } else {
+            $('#contactformsent').hide();
+        }
+    });
+});
+</script>
 
 <ul class="icons">
 
