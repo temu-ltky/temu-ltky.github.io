@@ -2,12 +2,12 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>temu.ltky.fi/fi/sitemap.xml</loc>
+	   	<loc>https://temu-ltky.github.io/fi/sitemap.xml</loc>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>temu.ltky.fi/en/sitemap.xml</loc>
+	   	<loc>https://temu-ltky.github.io/en/sitemap.xml</loc>
 		
 	   	<lastmod>2017-03-02T11:59:21-05:00</lastmod>
 		
